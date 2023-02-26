@@ -1,0 +1,172 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/media.css' %}">
+    <title>Vinstar Web</title>
+</head>
+<body style="background-color:gray;">
+    <header>
+        <nav>
+            <h4 style="color:white;"><i style="color:black;"class="bi bi-house-door-fill"></i>Vinstar</h4>
+            <div class="right_bx">
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#"><i class="bi bi-globe"></i>Help</a></li>
+                    <li><a href="contact">Contact</a></li>
+                </ul>
+                <div class="account_bx">
+                    <i class="bi bi-app-indicator"></i>
+                    <i class="bi bi-person"></i>
+                </div>
+            </div>
+        </nav>
+        <div class="content">
+            <div class="cont_bx">
+                <h1>Vinstar <br> Webs</h1>
+                <p>Solo Residentials, Apartment Houses, All class Residentials</p>
+                <div class="weather">
+                    <h6>40 °C <span>Average Temperature</span></h6>
+                </div>
+                <div class="btns_cont">
+                    <i class="bi bi-arrow-left" id="btn_left"></i>
+                    <i class="bi bi-arrow-right" id="btn_right"></i>
+                </div>
+                <div class="images_bx">
+                    <div class="card">
+                        <img src="{% static 'img/An outdoor pool.jpg' %}" alt="">
+                    </div>
+                    <div class="card">
+                        <img src="{% static 'img/(6x7 Meters) Small House Design Idea with 3 Bedrooms.jpg' %}" alt="">
+                    </div>
+                    <div class="card">
+                        <img src="{% static 'img/Random Inspiration 335.jpg' %}" alt="">
+                        <h6 id="h6">+6</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="choose_bx">
+                <div class="stay_bx">
+                    <button><i class="bi bi-house-door-fill"></i></button>
+                    <button><i class="bi bi-star-fill"></i></button>
+                    <button><i class="bi bi-tv-fill"></i></button>
+                </div>
+                <div class="select">
+                    <div class="card">
+                        <h5>City</h5>
+                        <input type="text" value="Kitengela">
+                        <input type="text" value="Kenya">
+                    </div>
+                    <div class="card">
+                        <h5>Pricing Range</h5>
+                        <input type="text" value="10M" id="people">
+                        <button id="people_less">Less</button>
+                        <button id="people_more">More</button>
+                    </div>
+                    <div class="card">
+                        <div class="left_box">
+                            <h5>Special Dates</h5>
+                            <div class="date">
+                                <h3 id="checkin_data">Sat, 20</h3>
+                                <input type="date" id="checkin" value="2022-09-11">
+                                <i class="bi bi-calendar2-week-fill"></i>
+                            </div>
+                        </div>
+                        <div class="right_box">
+                            <h5>Directions</h5>
+                            <div class="date">
+                                <h3 id="checkout_data">*****</h3>
+                                <input type="date" id="checkout">
+                            </div>
+                            <button id="checkout_less">Search</button>
+                            <button id="checkout_more">Auto Locate</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header><br>
+    <div class="home">
+        <div class="home_bx">
+            <div class="card">
+                <img src="{% static 'img/home1.png'%}" alt="">
+                <div class="content">
+                    <div class="cont">
+                        <h4>Nairobi</h4>
+                        <p>Central Region</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="{% static 'img/A maison de passe interior design.jpg' %}" alt="">
+                <div class="content">
+                    <div class="cont">
+                        <h4>Mombasa</h4>
+                        <p>Coastal Region</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="{% static 'img/An outdoor pool.jpg' %}" alt="">
+                <div class="content">
+                    <div class="cont">
+                        <h4>Eldoret</h4>
+                        <p>Rift valley region</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="{% static 'img/Random Inspiration 335.jpg' %}" alt="">
+                <div class="content">
+                    <div class="cont">
+                        <h4>Tatu City</h4>
+                        <p>Special Central Region</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="{% static 'img/An outdoor pool.jpg' %}" alt="">
+                <div class="content">
+                    <div class="cont">
+                        <h4>Kisumu</h4>
+                        <p>Western Region</p>
+                    </div>
+                </div>
+            </div>
+        </div><br>
+        <div class="title_button">
+            <h2>Explore more houses</h2>
+            <button>See More <i class="bi bi-arrow-right"></i></button>
+        </div>
+    </div>
+
+    <section>
+        <h2>Vinstar Services</h2>
+        <div class="box">
+            <div class="img_bx">
+                <img src="{% static 'img/317e7c5f5d69514a14d0168bdf266a7f.jpg' %}" alt="">
+            </div>
+            <div class="cont_box">
+                <h6><span>Policy</span></h6>
+                <h1>To make the home  <br> acquisition process simpler and enjoyable.</h1>
+                <p>Vinstar is a modern system that is built with a focus on successfully home acquisition over the comfort of a smart device and stable internet connection.Vinstar additionally offeres the services below:</p>
+                <ul>
+                    <li>PropertyManagement</li>
+                    <li>Property Security</li>
+                    <li>Premium marketing services</li>
+                    <li>Business Promotions</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <h4><i class="bi bi-house-door-fill"></i>vinstar.inc</h4>
+    </footer>
+</body>
+</html>

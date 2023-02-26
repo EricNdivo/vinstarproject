@@ -1,0 +1,225 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap');
+
+/* GENERAL */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+}
+a{
+    text-decoration: none!important;
+}
+.transition{ /* transition for diferents class */
+    -webkit-transition:all 200ms linear;
+	-moz-transition:all 200ms linear;
+	-o-transition:all 200ms linear;
+	-ms-transition:all 200ms linear;
+	transition:all 200ms linear;
+}
+.cover-full{ /* object absolute cover full area */
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0; 
+}
+.center{ /* set in center */
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width: 100%;
+}
+
+h1, h2{
+    font-weight: 700;
+    color:rgb(6, 33, 90);
+}
+h3, h4, h5, h6{
+    font-weight: 500;
+    color:rgb(6, 33, 90);
+}
+.content-right{
+    text-align: right;
+}
+.btn-primary{
+    background-color:#252c41;
+    border-color:#0fca98!important;
+    color: #fff!important;
+    font-weight: 500!important;
+}
+.btn-secondary{
+    background-color: transparent!important;
+    border-color:#fff!important;
+    color:#fff!important;
+    font-weight: 500!important;
+}
+
+/* ALL SECTIONS */
+.section-title{
+    font-weight: 700;
+    margin-bottom: 50px;
+    font-size: 2em;
+    position:relative;
+    text-align: center;
+    z-index: 2;
+}
+.section-title:after{
+    content: "";
+    width: 30px;
+    height: 4px;
+    background-color: #0fca98;
+    display: block;
+    position: absolute;
+    top: 46px;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+
+
+/* NAVBAR */
+.navbar {
+    position: absolute!important;
+    width: 100%;
+    z-index: 2;
+}
+.navbar-brand img {
+    max-width: 240px;
+}
+.navbar-nav {
+    margin-left: auto;
+}
+.nav-link{
+    font-weight: 500;
+    margin: 0 10px;
+    color:#fff!important;
+}
+.nav-link:hover{
+    color:rgb(15, 56, 89)!important;
+}
+.navbar-toggler {
+    border-color: #fff!important;
+}
+.navbar-toggler-icon {
+    padding: 5px 0;
+}
+.navbar-toggler-icon i {
+    color: #fff;
+}
+.fixed {
+    position: fixed!important;
+    top: 0;
+    width: 100%;
+    background-color:#1b2132;
+    z-index: 4;
+}
+
+/* CAROUSEL IMAGES */
+.banner{
+    position: relative;
+}
+.banner .owl-theme .item{
+    height: 100vh;
+    background-size: cover;
+    background-position:center;
+}
+
+.overlay-bg{
+    background-color: #1b2132;
+    opacity: .6;
+    z-index: 2;
+}
+.item .container{
+    position: relative;
+    height: 100%;
+}
+.caption {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    z-index: 3;
+    text-align: center;
+    color: #fff;
+}
+.caption-heading a:hover {
+    color:rgb(6, 33, 90);
+}
+.caption-heading {
+    font-size: 3em;
+    font-weight: 700;
+    padding: 0;
+    color: #fff;
+    line-height: 1;
+    margin: 10px 0 30px;
+    text-shadow: 0 0 15px #2b2b2b;
+}
+/* CONTACT */
+.contact{
+    padding: 80px 0;
+}
+.contact-desc {
+    text-align: center;
+    margin-bottom: 60px;
+}
+.contact-desc h1 {
+    color:rgb(6, 33, 90);
+    font-weight: 700;
+}
+.contact-desc p {
+    font-size: 1.4em;
+}
+.contact-form {
+    max-width: 50%;
+    margin: 0 auto;
+}
+.contact-form button {
+    color:rgb(11, 10, 56)!important;
+}
+/* FOOTER */
+.footer1{
+    background-color:#1b2132;
+}
+.footer2{
+    background-color: #1b2132;
+}
+.footer *{
+    color: #fff;
+}
+.foot-col h4{
+    font-weight: 500;
+    margin-bottom: 40px;
+    position: relative;
+    font-size: 1em;
+}
+.foot-col h4:after{
+    content: "";
+    width: 20px;
+    height: 4px;
+    background-color:rgb(15, 56, 89);
+    display: block;
+    position: absolute;
+    top:32px;
+}
+.foot-col p{
+    line-height: 30px;
+    margin-bottom: 5px;
+}
+.foot-col a:hover{
+    color:rgb(15, 56, 89);
+}
+.foot-logo{
+    width: auto;
+}
+.foot-bottom-text{
+    font-size: .8em;
+}
+.social-links a {
+    margin-left: 20px;
+}
+.social-links a:hover i{
+    color:rgb(15, 56, 89)!important;
+}

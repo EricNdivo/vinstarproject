@@ -1,0 +1,172 @@
+{%  load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinstar</title>
+
+    <link rel="stylesheet" href="{% static 'css/build.css' %}">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- owl -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+</head>
+<body>
+  
+    <!-- NAVBAR -->
+    <nav id="navbar" class="navbar navbar-expand-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="{% static 'assets/output-onlinepngtools (2).png' %}" alt="logo detail">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-main">
+                <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+            </button>
+        </div>
+    </nav>
+    <!-- CAROUSEL IMAGES -->
+    <section class="banner">
+    	<div class="owl-carousel owl-theme carousel-sliders">
+	    	<div class="item" style="background-image: url("{% static 'vinstarapp/assets/pro5.jpg' %}");">
+	        	<div class="overlay-bg cover-full"></div>
+	        	<div class="container">
+	            	<div class="caption">
+		                <h1 class="caption-heading">Vinstar Systems .inc</h1>
+		                <a href="#" class="btn btn-secondary">Surf Residences</a>
+		            </div>  
+	            </div>
+	    	</div>
+	    	<div class="item" style="background-image: url(assets/slide2.jpg);">
+	            <div class="overlay-bg cover-full"></div>
+	            <div class="container">
+	            	<div class="caption">
+		                <h1 class="caption-heading">A step away from your ideal home</h1>
+		                <a href="#" class="btn btn-secondary">Surf Residences</a>
+		            </div>  
+	            </div>
+	        </div>  
+	    	<div class="item" style="background-image: url("{% static '(assets/slide3.jpg)' %}");">
+	            <div class="overlay-bg cover-full"></div>
+	            <div class="container">
+	            	<div class="caption">
+		                <h1 class="caption-heading">A variety of affordable housing units on sale.</h1>
+		                <a href="#" class="btn btn-secondary">Surf Residences</a>
+		            </div>  
+	            </div>
+	        </div>  
+    	</div>
+	    <div class="custom-nav owl-nav"></div>
+    </section>
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+        <div class="container pt-5 pb-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="contact-desc">
+                        <h1 class="mb-5">Contact Vinstar</h1>
+                        <p>Submit a project application, complaint, suggestions and many more views through the
+                            contact Section Below.</p>
+                    </div>
+                    <div class="contact-form">
+                        <form action="">
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="Your name">
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" placeholder="Email Address">
+                            </div>
+                            <div class="mb-3">
+                                <input type="tel" class="form-control" placeholder="Phone Number">
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="Subject">
+                            </div>
+                            <div class="mb-3">
+                                <button class="btn btn-primary" type="submit">Send my info</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer footer1">
+        <div class="container pt-5 pb-5">
+            <div class="row">
+                <div class="col-md-6 mb-5">
+                    <img class="foot-logo" src="{% static 'assets//////////output-onlinepngtools (2).png' %}" alt="Logo School">
+                </div>
+
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-4 foot-col mb-2">
+                            <h4>About</h4>
+                            <p>123 KCA Road <br>
+                                Nairobi, CT washenzy<br>
+                                Phone: 01234567</p>
+                        </div>
+                        <div class="col-md-4 foot-col mb-2">
+                            <h4>Contacts</h4>
+                            <p><a href="#">Blog & Articles</a></p>
+                            <p><a href="#">Terms and Conditions</a></p>
+                            <p><a href="#">Privacy Policy</a></p>
+                            <p><a href="#">Contact</a></p>
+                        </div>
+                        <div class="col-md-4 foot-col mb-2">
+                            <h4>Navigation</h4>
+                            <p><a href="#">Home</a></p>
+                            <p><a href="#">Services</a></p>
+                            <p><a href="#">Projects</a></p>
+                            <p><a href="#">Contact</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+    </footer>
+    <footer class="footer footer2">
+        <div class="container pt-3 pb-2">
+            <div class="row">
+                <div class="col-md-8 foot-bottom-text">
+                    <p>Privacy Policy / vinstar systems inc - Vinstar © 2023 
+                        / All Rights Reserved</p>
+                </div>
+                <div class="col-md-4 social-links content-right">
+                    <a href="#" class="fb">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="tw">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="ig">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- JAVASCRIPT -->
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <!-- owl js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- fancybox -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <!-- custom js -->
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>
