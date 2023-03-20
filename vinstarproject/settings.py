@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'vinstarapp',
 ]
 
 MIDDLEWARE = [
@@ -73,17 +74,17 @@ WSGI_APPLICATION = 'vinstarproject.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-"""DATABASES = {
+DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'vinstar',
-        'HOST': '127.0.0.1',
-        'PORT': '3000',
+        'HOST': 'localhost',
+        'PORT': '3306',
         'USER': 'root',
-        'PASSWORD': 'sain.rick',
+        'PASSWORD': '',
 
     }
-}"""
+}
 
 
 # Password validation
