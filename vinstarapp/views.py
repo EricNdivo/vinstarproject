@@ -58,7 +58,9 @@ def signout(request):
     logout(request)
     return redirect('/')
 
-def logout(request):
-   pass
+def seemore(request):
+    print(request.user)
+    
+    return render(request, 'main.html')
 
             
