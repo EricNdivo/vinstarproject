@@ -58,6 +58,7 @@ def signout(request):
     logout(request)
     return redirect('/')
 
-
+def logout(request):
+   pass
 
             
