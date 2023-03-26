@@ -47,7 +47,7 @@ header nav .right_bx ul li {
 }
 
 header nav .right_bx ul li:nth-last-child(1) {
-    border: 1px solid gray;
+    border: 1px solid rgb(255, 255, 255);
     border-radius: 20px;
     padding: 3px 20px;
 }
@@ -57,7 +57,7 @@ header nav .right_bx ul li:nth-last-child(1) a {
 }
 
 header nav .right_bx ul li:nth-last-child(1) a:hover {
-    color: gray;
+    color: rgb(255, 255, 255);
 }
 
 header nav .right_bx ul li a {
@@ -69,7 +69,7 @@ header nav .right_bx ul li a {
 }
 
 header nav .right_bx ul li a:hover {
-    color:#ffffff94;
+    color:#ffffff;
 }
 
 header nav .right_bx .account_bx {
@@ -126,7 +126,7 @@ header .content .cont_bx h1 {
 header .content .cont_bx p {
     font-size: 13px;
     font-weight: 400;
-    color: rgb(100, 100, 100);
+    color: rgb(255, 255, 255);
     margin-top: 10px;
 }
 
@@ -135,7 +135,7 @@ header .content .cont_bx .weather {
 }
 
 header .content .cont_bx .weather h6 {
-    color: rgb(64, 64, 64);
+    color: rgb(255, 255, 255);
     font-size: 10px;
     font-weight: 600;
 }
@@ -149,7 +149,7 @@ header .content .cont_bx .btns_cont {
 }
 
 header .content .cont_bx .btns_cont i {
-    border: 1px solid gray;
+    border: 1px solid rgb(255, 255, 255);
     padding: 0px 3.3px;
     border-radius: 50%;
     cursor: pointer;
@@ -158,7 +158,7 @@ header .content .cont_bx .btns_cont i {
 
 header .content .cont_bx .btns_cont i:hover {
     color: #000;
-    background: rgb(0, 0, 0, .1);
+    background: rgb(255, 255, 255);
 }
 
 header .content .cont_bx .images_bx {
@@ -174,7 +174,7 @@ header .content .cont_bx .images_bx .card {
     width: 100%;
     height: 50px;
     margin-top: 10px;
-    background: rgb(237, 237, 237, .3);
+    background: rgb(255, 255, 255);
     padding: 5px;
     border-radius: 8px;
 }
@@ -210,7 +210,7 @@ header .content .choose_bx .stay_bx {
 header .content .choose_bx .stay_bx button {
     padding: 10px 30px;
     background: #000;
-    color: gray;
+    color: rgb(255, 255, 255);
     border: none;
     outline: none;
     font-family: 'Poppins', sans-serif;
@@ -219,14 +219,14 @@ header .content .choose_bx .stay_bx button {
 }
 
 header .content .choose_bx .stay_bx button:hover {
-    background:gray;
+    background:rgb(255, 255, 255);
     color: #000;
 }
 
 header .content .choose_bx .stay_bx button:nth-child(1) {
     border-radius: 10px 0px 0px 0px;
     background:#000;
-    color: gray;
+    color: rgb(255, 255, 255);
 }
 
 header .content .choose_bx .stay_bx button:nth-last-child(1) {
@@ -240,7 +240,7 @@ header .content .choose_bx .stay_bx button i {
 header .content .choose_bx .select {
     width: 100%;
     height: 135px;
-    background:gray;
+    background:rgb(255, 255, 255);
     border-radius: 0px 10px 10px 10px;
     border:#000000;
     position: relative;
@@ -254,7 +254,7 @@ header .content .choose_bx .select {
 header .content .choose_bx .select .card {
     width: 26%;
     height: 90%;
-    border: rgb(67, 67, 67);
+    border: rgb(255, 255, 255);
     border-radius: 10px;
     padding: 10px 0px 10px 30px;
 }
@@ -296,7 +296,7 @@ header .content .choose_bx .select .card button {
 }
 
 header .content .choose_bx .select .card button:hover {
-    border-bottom: 2px solid rgb(177, 177, 177);
+    border-bottom: 2px solid rgb(255, 255, 255);
 }
 
 header .content .choose_bx .select .card:nth-child(3) {
@@ -358,7 +358,7 @@ header .content .choose_bx .select .card:nth-child(3) .date h5 {
     position: absolute;
     right: 0;
     padding: 8px 15px;
-    background: #8d8b8bb8;
+    background: #ffffff;
     color: #000;
     border: none;
     outline: none;
@@ -371,7 +371,7 @@ header .content .choose_bx .select .card:nth-child(3) .date h5 {
 
 .home .title_button button:hover {
     background: #000;
-    color: #fff;
+    color: #000000;
 }
 
 .home .title_button button .bi {
@@ -415,7 +415,7 @@ header .content .choose_bx .select .card:nth-child(3) .date h5 {
     position: absolute;
     right: 15px;
     top: 10px;
-    color: #fff;
+    color: #000000;
 }
 
 .home .home_bx .card .content .bi::after {
@@ -423,7 +423,7 @@ header .content .choose_bx .select .card:nth-child(3) .date h5 {
     position: absolute;
     width: 165%;
     height: 110%;
-    background: rgb(194, 194, 194, .3);
+    background: rgb(255, 255, 255);
     left: -35%;
     top: -3px;
     border-radius: 50%;
@@ -443,20 +443,20 @@ header .content .choose_bx .select .card:nth-child(3) .date h5 {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: rgb(245, 245, 245, .1);
+    background: rgb(255, 255, 255);
     backdrop-filter: blur(5px);
     border-radius: 0px 0px 13px 13px;
     z-index: -1;
 }
 
 .home .home_bx .card .content .cont h4 {
-    color: #fff;
+    color: #000000;
     padding: 10px 0px 0px 15px;
     line-height: 5px;
 }
 
 .home .home_bx .card .content .cont p {
-    color: #fff;
+    color: #000000;
     padding: 10px 0px 0px 15px;
     font-size: 12px;
 }
@@ -513,7 +513,7 @@ section .box .cont_box h6::before {
     position: absolute;
     width: 20px;
     height: 1.5px;
-    background: rgb(136, 136, 136);
+    background: rgb(255, 255, 255);
     top: 7px;
 }
 

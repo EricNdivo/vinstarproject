@@ -60,7 +60,11 @@ def signout(request):
 
 def seemore(request):
     print(request.user)
-    
     return render(request, 'main.html')
 
+
+def services(request):
+    print(request.user)
+    
+    return render(request, 'services.html')
             

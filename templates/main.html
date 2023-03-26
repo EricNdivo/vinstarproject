@@ -1,238 +1,268 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>STATED.</title>
+    <meta charset="utf-8">
+    <title>More Property</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
 
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link href="{% static 'css/main.css' %}" type="text/css" rel="Stylesheet" />
-    <link rel="stylesheet" href="{% static 'css/build.css' %}">
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
 
-    <!-- fontawesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <!-- bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <!-- owl -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://kit.fontawesome.com/95dc93da07.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-</head>
-    <section id="properties">
-        <div class="container">
-            <h2>Properties</h2>
-            <div id="properties-slider" class="slick">
-                <div>
-                    <img src="https://onclickwebdesign.com/wp-content/uploads/property_1.jpg" alt="Property 1" />
-                    <div class="property-details">
-                        <p class="price">$3,400,000</p>
-                        <span class="beds">6 beds</span>
-                        <span class="baths">4 baths</span>
-                        <span class="sqft">4,250 sqft.</span>
-                        <address>
-                            480 12th, Unit 14, San Francisco, CA
-                        </address>
-                    </div>
-                </div>
-
-                <div>
-                    <img src="https://onclickwebdesign.com/wp-content/uploads/property_2.jpg" alt="Property 1" />
-                    <div class="property-details">
-                        <p class="price">$3,400,000</p>
-                        <span class="beds">6 beds</span>
-                        <span class="baths">4 baths</span>
-                        <span class="sqft">4,250 sqft.</span>
-                        <address>
-                            480 12th, Unit 14, San Francisco, CA
-                        </address>
-                    </div>
-                </div>
-
-                <div>
-                    <img src="https://onclickwebdesign.com/wp-content/uploads/property_3.jpg" alt="Property 1" />
-                    <div class="property-details">
-                        <p class="price">$3,400,000</p>
-                        <span class="beds">6 beds</span>
-                        <span class="baths">4 baths</span>
-                        <span class="sqft">4,250 sqft.</span>
-                        <address>
-                            480 12th, Unit 14, San Francisco, CA
-                        </address>
-                    </div>
-                </div>
-
-                <div>
-                    <img src="https://onclickwebdesign.com/wp-content/uploads/property_3.jpg" alt="Property 1" />
-                    <div class="property-details">
-                        <p class="price">$3,400,000</p>
-                        <span class="beds">6 beds</span>
-                        <span class="baths">4 baths</span>
-                        <span class="sqft">4,250 sqft.</span>
-                        <address>
-                            480 12th, Unit 14, San Francisco, CA
-                        </address>
-                    </div>
-                </div>
-
-
-                <div>
-                    <img src="https://onclickwebdesign.com/wp-content/uploads/property_4.jpg" alt="Property 1" />
-                    <div class="property-details">
-                        <p class="price">$3,400,000</p>
-                        <span class="beds">6 beds</span>
-                        <span class="baths">4 baths</span>
-                        <span class="sqft">4,250 sqft.</span>
-                        <address>
-                            480 12th, Unit 14, San Francisco, CA
-                        </address>
-                    </div>
-                </div>
-
-                <div>
-                    <img src="https://onclickwebdesign.com/wp-content/uploads/property_1.jpg" alt="Property 1" />
-                    <div class="property-details">
-                        <p class="price">$3,400,000</p>
-                        <span class="beds">6 beds</span>
-                        <span class="baths">4 baths</span>
-                        <span class="sqft">4,250 sqft.</span>
-                        <address>
-                            480 12th, Unit 14, San Francisco, CA
-                        </address>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="properties">
-        
-
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap" rel="stylesheet">
     
-    <footer>
-        <div class="container pt-5 pb-5">
-            <div class="row">
-                <div class="col-md-6 mb-5">
-                    <img class="foot-logo" src="{% static 'assets//////////output-onlinepngtools (2).png' %}" alt="Logo School">
-                </div>
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-                <div class="col-md-6">
-                    <div class="row">
-                        <div class="col-md-4 foot-col mb-2">
-                            <h4>About</h4>
-                            <p>123 KCA Road <br>
-                                Nairobi, CT washenzy<br>
-                                Phone: 01234567
-                            </p>
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="{% static 'css/mai.css' %}" rel="stylesheet">
+</head>
+
+<body>
+
+
+<!-- Search Start -->
+<section>
+
+        <div class="container-fluid bg-primary mb-5 wow fadeIn" data-wow-delay="0.1s" style="padding: 35px;" style="background-color: gray;">
+            <div class="container">
+                <div class="row g-2">
+                    <div class="col-md-10">
+                        <div class="row g-2">
+                            <div class="col-md-4">
+                                <input type="text" class="form-control border-0 py-3" placeholder="Search Keyword">
+                            </div>
+                            <div class="col-md-4">
+                                <select class="form-select border-0 py-3">
+                                    <option selected>Property Type</option>
+                                    <option value="1">Property Type 1</option>
+                                    <option value="2">Property Type 2</option>
+                                    <option value="3">Property Type 3</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <select class="form-select border-0 py-3">
+                                    <option selected>Location</option>
+                                    <option value="1">Location 1</option>
+                                    <option value="2">Location 2</option>
+                                    <option value="3">Location 3</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="col-md-4 foot-col mb-2">
-                            <h4>Contacts</h4>
-                            <p><a href="#">Blog & Articles</a></p>
-                            <p><a href="#">Terms and Conditions</a></p>
-                            <p><a href="#">Privacy Policy</a></p>
-                            <p><a href="#">Contact</a></p>
+                    </div>
+                    <div class="col-md-2">
+                        <button class="btn btn-dark border-0 w-100 py-3">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+        <!-- Search End -->
+
+
+        <!-- Category Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="mb-3">More Property</h1>
+                    <p>A collection of high standard modern as well as traditional suits to acomodate your living needs.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
+                            <div class="rounded p-4">
+                                <div>
+                                    <img class="img-fluid" src="{% static 'assets/wp4110648.jpg' %}" alt="Icon">
+                                </div>
+                                <h6>Apartment</h6>
+                                <span>123 Properties</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
+                            <div class="rounded p-4">
+                                <div class="icon mb-3">
+                                    <img class="img-fluid" src="{% static 'assets/img/property-5.jpg' %}" alt="Icon">
+                                </div>
+                                <h6>Villas</h6>
+                                <span>123 Properties</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
+                            <div class="rounded p-4">
+                                <div class="icon mb-3">
+                                    <img class="img-fluid" src="{% static 'assets/img/property-2.jpg' %}" alt="Icon">
+                                </div>
+                                <h6>Home</h6>
+                                <span>123 Properties</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
+                            <div class="rounded p-4">
+                                <div class="icon mb-3">
+                                    <img class="img-fluid" src="{% static 'assets/slide2.jpg' %}" alt="Icon">
+                                </div>
+                                <h6>Office</h6>
+                                <span>123 Properties</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
+                            <div class="rounded p-4">
+                                <div class="icon mb-3">
+                                    <img class="img-fluid" src="{% static 'assets/img/property-3.jpg' %}" alt="Icon">
+                                </div>
+                                <h6>Building</h6>
+                                <span>123 Properties</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
+                            <div class="rounded p-4">
+                                <div class="icon mb-3">
+                                    <img class="img-fluid" src="{% static 'assets/img/property-3.jpg' %}" alt="Icon">
+                                </div>
+                                <h6>Townhouse</h6>
+                                <span>123 Properties</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
+                            <div class="rounded p-4">
+                                <div class="icon mb-3">
+                                    <img class="img-fluid" src="{% static 'assets/img/property-5.jpg' %}" alt="Icon">
+                                </div>
+                                <h6>Shop</h6>
+                                <span>123 Properties</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
+                            <div class="rounded p-4">
+                                <div class="icon mb-3">
+                                    <img class="img-fluid" src="{% static 'assets/img/carousel-2.jpg' %}" alt="Icon">
+                                </div>
+                                <h6>Lone House</h6>
+                                <span>123 Properties</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Category End -->
+
+        <!-- Team Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="mb-3">Property Agents</h1>
+                    <p>Reach out to the property agents below for further information.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item rounded overflow-hidden">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="img/team-1.jpg" alt="">
+                                <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="text-center p-4 mt-3">
+                                <h5 class="fw-bold mb-0">Richard Washe</h5>
+                                <small>richwashe@gmail.com</small><br>
+                                <small>System Administrator</small>
+                            </div>
                         </div>
-                        <div class="col-md-4 foot-col mb-2">
-                            <h4>Navigation</h4>
-                            <p><a href="#">Home</a></p>
-                            <p><a href="#">Services</a></p>
-                            <p><a href="#">Projects</a></p>
-                            <p><a href="#">Contact</a></p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="team-item rounded overflow-hidden">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="img/team-2.jpg" alt="">
+                                <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="text-center p-4 mt-3">
+                                <h5 class="fw-bold mb-0">John Kariuki</h5>
+                                <small>+25412345787</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="team-item rounded overflow-hidden">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="img/team-3.jpg" alt="">
+                                <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="text-center p-4 mt-3">
+                                <h5 class="fw-bold mb-0">Celine Mutuku</h5>
+                                <small>celinemutuku@gmail.com</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="team-item rounded overflow-hidden">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="img/team-4.jpg" alt="">
+                                <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="text-center p-4 mt-3">
+                                <h5 class="fw-bold mb-0">Mike Smith</h5>
+                                <small>smithmk@gmail.com</small>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </footer>
-    <script>
-        $(function () {
-            let headerElem = $('header');
-            let logo = $('#logo');
-            let navMenu = $('#nav-menu');
-            let navToggle = $('#nav-toggle');
+        <!-- Team End -->
 
-           $('#properties-slider').slick({
-                slidesToShow: 4,
-                slidesToScroll: 1,
-                prevArrow: '<a href="#" class="slick-arrow slick-prev">previous</a>',
-                nextArrow: '<a href="#" class="slick-arrow slick-next">next</a>',
-                responsive: [
-                    {
-                        breakpoint: 1100,
-                        settings: {
-                            slidesToShow: 3,
-                            slidesToScroll: 1,
-                            infinite: true,
-                        }
-                    },
-                    {
-                        breakpoint: 767,
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 1,
-                            infinite: true,
-                        }
-                    },
-                    {
-                        breakpoint: 530,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1,
-                            infinite: true,
-                        }
-                    }
-                ]
-           });
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
-           $('#testimonials-slider').slick({
-                infinite: true,
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                prevArrow: '<a href="#" class="slick-arrow slick-prev"><</a>',
-                nextArrow: '<a href="#" class="slick-arrow slick-next">></a>'
-           });
-
-           navToggle.on('click', () => {
-               navMenu.css('right', '0');
-           });
-
-           $('#close-flyout').on('click', () => {
-                navMenu.css('right', '-100%');
-           });
-
-           $(document).on('click', (e) => {
-               let target = $(e.target);
-               if (!(target.closest('#nav-toggle').length > 0 || target.closest('#nav-menu').length > 0)) {
-                   navMenu.css('right', '-100%');
-               }
-           });
-
-           $(document).scroll(() => {
-               let scrollTop = $(document).scrollTop();
-
-               if (scrollTop > 0) {
-                   navMenu.addClass('is-sticky');
-                   logo.css('color', '#000');
-                   headerElem.css('background', '#fff');
-                   navToggle.css('border-color', '#000');
-                   navToggle.find('.strip').css('background-color', '#000');
-               } else {
-                   navMenu.removeClass('is-sticky');
-                   logo.css('color', '#fff');
-                   headerElem.css('background', 'transparent');
-                   navToggle.css('bordre-color', '#fff');
-                   navToggle.find('.strip').css('background-color', '#fff');
-               }
-
-               headerElem.css(scrollTop >= 200 ? {'padding': '0.5rem', 'box-shadow': '0 -4px 10px 1px #999'} : {'padding': '1rem 0', 'box-shadow': 'none' });
-           });
-
-           $(document).trigger('scroll');
-        });
-    </script>
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
 </body>
+
 </html>

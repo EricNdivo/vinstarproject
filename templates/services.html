@@ -1,60 +1,157 @@
-<section id="services">
-    <div class="container">
-        <h2>Services</h2>
-        <div class="flex">
-            <div>
-                <div class="fas fa-home"></div>
-                <div class="services-card-right">
-                    <h3>Search Property</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                    <a href="#">Learn More</a>
-                </div>
-            </div>
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Services</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link href="{% static 'css/services.css' %}" type="text/css" rel="Stylesheet" />
+    <link rel="stylesheet" href="{% static 'css/build.css' %}">
 
-            <div>
-                <div class="fas fa-dollar-sign"></div>
-                <div class="services-card-right">
-                    <h3>Buy Property</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                    <a href="#">Learn More</a>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- owl -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/95dc93da07.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    
+</head>
+<body>
+    <section id="services">
+        <div class="container">
+            <h2>Services & About</h2>
+            <div class="flex">
+                <div>
+                    <div class="fas fa-home"></div>
+                    <div class="services-card-right">
+                        <h3>Search Property</h3>
+                        <p>Vinstar uses a user-guided search system, which allows the user to easily navigate the website and narrow down to the desired search.</p>
+                        <a href="#">Learn More</a>
+                    </div>
                 </div>
-            </div>
 
-            <div>
-                <div class="fas fa-chart-line"></div>
-                <div class="services-card-right">
-                    <h3>Investing</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                    <a href="#">Learn More</a>
+                <div>
+                    <div class="fas fa-dollar-sign"></div>
+                    <div class="services-card-right">
+                        <h3>Buy Property</h3>
+                        <p>Vinstar tries to connect property managers with the proper clients, and because Vinstar acts as an intermediary, clients can purchase property through it.</p>
+                        <a href="#">Learn More</a>
+                    </div>
                 </div>
-            </div>
 
-            <div>
-                <div class="fas fa-building"></div>
-                <div class="services-card-right">
-                    <h3>List a Property</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                    <a href="#">Learn More</a>
+                <div>
+                    <div class="fas fa-chart-line"></div>
+                    <div class="services-card-right">
+                        <h3>Investing</h3>
+                        <p>Vinstar can influence future project investment through the special dates feature.</p>
+                        <a href="#">Learn More</a>
+                    </div>
                 </div>
-            </div>
 
-            <div>
-                <div class="fas fa-search"></div>
-                <div class="services-card-right">
-                    <h3>Property Locator</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                    <a href="#">Learn More</a>
+                <div>
+                    <div class="fas fa-building"></div>
+                    <div class="services-card-right">
+                        <h3>List a Property</h3>
+                        <p>In order to keep the system operational, this system is an open digital market for property listings by property managers.</p>
+                        <a href="#">Learn More</a>
+                    </div>
                 </div>
-            </div>
 
-            <div>
-                <div class="fas fa-mobile-alt"></div>
-                <div class="services-card-right">
-                    <h3>Stated Apps</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                    <a href="#">Learn More</a>
+                <div>
+                    <div class="fas fa-search"></div>
+                    <div class="services-card-right">
+                        <h3>Property Locator</h3>
+                        <p>Through Vinstar's mapping feature, one can find locations to various properties.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="fas fa-mobile-alt"></div>
+                    <div class="services-card-right">
+                        <h3>Stated Apps</h3>
+                        <p>The system is currrently web operational but there will be plans to scale it to mobile devices.</p>
+                        <a href="#">Learn More</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section><br>
+</body>
+    <!-- FOOTER -->
+    <footer class="footer footer1">
+        <div class="container pt-5 pb-5">
+            <div class="row">
+                <div class="col-md-6 mb-5">
+                    <img class="foot-logo" src="{% static 'assets//////////output-onlinepngtools (2).png' %}" alt="Logo School">
+                </div>
+
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-4 foot-col mb-2">
+                            <h4>About</h4>
+                            <p>123 KCA Road <br>
+                                Nairobi, CT washenzy<br>
+                                Phone: 01234567</p>
+                        </div>
+                        <div class="col-md-4 foot-col mb-2">
+                            <h4>Contacts</h4>
+                            <p><a href="#">Blog & Articles</a></p>
+                            <p><a href="#">Terms and Conditions</a></p>
+                            <p><a href="#">Privacy Policy</a></p>
+                            <p><a href="#">Contact</a></p>
+                        </div>
+                        <div class="col-md-4 foot-col mb-2">
+                            <h4>Navigation</h4>
+                            <p><a href="#">Home</a></p>
+                            <p><a href="#">Services</a></p>
+                            <p><a href="#">Projects</a></p>
+                            <p><a href="#">Contact</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+    </footer>
+    <footer class="footer footer2">
+        <div class="container pt-3 pb-2">
+            <div class="row">
+                <div class="col-md-8 foot-bottom-text">
+                    <p>Privacy Policy / vinstar systems inc - Vinstar © 2023 
+                        / All Rights Reserved</p>
+                </div>
+                <div class="col-md-4 social-links content-right">
+                    <a href="#" class="fb">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="tw">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="ig">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- JAVASCRIPT -->
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <!-- owl js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- fancybox -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <!-- custom js -->
+    <script src="{% static 'js/main.js' %}"></script>
