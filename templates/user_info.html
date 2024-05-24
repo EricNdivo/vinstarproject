@@ -1,0 +1,36 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>User Profile</title>
+    <link href="{% static 'css/services.css' %}" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="{% static 'css/build.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+</head>
+<body>
+    <section id="services">
+        <div class="container">
+            <h2>User Profile</h2>
+            <div class="flex">
+                <div>
+                    <div class="fas fa-user"></div>
+                    <div class="services-card-right">
+                        <h3>Username: {{ user.username }}</h3>
+                        <h3>Email: {{ user.email }}</h3>
+                        <h3>First Name: {{ user.first_name }}</h3>
+                        <h3>Last Name: {{ user.last_name }}</h3>
+                        <a href="#">Edit Profile</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><br>
+</body>
+</html>

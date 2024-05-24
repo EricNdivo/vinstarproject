@@ -6,6 +6,7 @@ from django.shortcuts import render, redirect
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.forms import AuthenticationForm
 from django.shortcuts import HttpResponseRedirect
+from django.contrib.auth.decorators import login_required
 def index(request):
     return render(request, 'index.html')
 
@@ -67,4 +68,18 @@ def services(request):
     print(request.user)
     
     return render(request, 'services.html')
-            
+@login_required
+def user_profile(request):
+    print(request.user)
+
+    user = request.user
+
+    username = user.username
+    email = user.email
+
+    context = {
+        'username': username,
+        'email': email,
+    }
+
+    return render(request, 'user_info.html', context)
