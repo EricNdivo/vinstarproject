@@ -10,5 +10,7 @@ urlpatterns = [
     path('signup/',views.signup, name='signup'),
     path('seemore', views.seemore, name='seemore'),
     path('services', views.services, name='services'),
-    path('user_profile',views.user_profile,name='user_profile')
+    path('user_profile',views.user_profile,name='user_profile'),
+    path('user_management',views.user_management,name='user_management'),
+    path('search', views.property_search, name='property_search')
 ]

@@ -7,6 +7,7 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.forms import AuthenticationForm
 from django.shortcuts import HttpResponseRedirect
 from django.contrib.auth.decorators import login_required
+from .models import Property, Agent 
 def index(request):
     return render(request, 'index.html')
 
@@ -15,9 +16,7 @@ def contact(request):
 
 def about(request):
     return HttpResponse("Coming Soon...")
-        
-    
-    
+           
 def signup(request):
     if request.user.is_authenticated:
         return redirect('/')
@@ -63,11 +62,10 @@ def seemore(request):
     print(request.user)
     return render(request, 'main.html')
 
-
 def services(request):
-    print(request.user)
-    
+    print(request.user)   
     return render(request, 'services.html')
+
 @login_required
 def user_profile(request):
     print(request.user)
@@ -81,5 +79,34 @@ def user_profile(request):
         'username': username,
         'email': email,
     }
-
     return render(request, 'user_info.html', context)
+
+def user_management(request):
+    print(request.user)
+
+    return render(request, 'user_management.html')
+
+def property_search(request):
+    print(request.user)
+
+    keyword = request.GET.get('keyword', '')
+    property_type = request.GET.get('property_type', '')
+    location = request.GET.get('location', '')
+
+    properties = Property.objects.all()
+
+    if keyword:
+        properties = properties.filter(name__icontains=keyword)
+    if property_type:
+        properties = properties.filter(property_type=property_type)
+    if location:
+        properties = properties.filter(location=location)
+
+
+    agents = Agent.objects.all()
+
+    context ={
+        'properties': properties,
+        'agents': agents,
+    }
+    return render(request, 'main.html', context)
