@@ -74,17 +74,17 @@ WSGI_APPLICATION = 'vinstarproject.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-'''DATABASES = {
+DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'vinstar',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'vinstar_project',
         'HOST': 'localhost',
-        'PORT': '3306',
-        'USER': 'root',
-        'PASSWORD': '',
+        'PORT': '5432',
+        'USER': 'eric',
+        'PASSWORD': 'sentinel90',
 
     }
-}'''
+}
 
 
 # Password validation

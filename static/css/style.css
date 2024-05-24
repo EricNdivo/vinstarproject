@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
     padding: 0%;
     margin: 0%;
@@ -16,7 +17,6 @@ html {
 header {
     width: 65%;
     height: 85vh;
-    /* border: 1px solid #000; */
     margin: auto;
     transition: .3s linear;
 }
@@ -25,7 +25,6 @@ header nav {
     width: 100%;
     height: 7%;
     margin: 5px auto;
-    /* border: 1px solid #000; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -93,7 +92,6 @@ header .content {
     position: relative;
     width: 100%;
     height: 93%;
-    /* border: 1px solid #000; */
     z-index: 5;
 }
 
@@ -114,7 +112,6 @@ header .content .cont_bx {
     height: auto;
     color: #000;
     padding: 50px;
-    /* border: 1px solid #000; */
 }
 
 header .content .cont_bx h1 {
@@ -165,7 +162,6 @@ header .content .cont_bx .images_bx {
     position: absolute;
     right: 20px;
     top: 40px;
-    /* border: 1px solid #000; */
     width: 50px;
 }
 
@@ -190,27 +186,25 @@ header .content .cont_bx .images_bx .card h6 {
     top: 15px;
     left: 15px;
     font-size: 14px;
-    /* z-index: 99999; */
-    color: #fff;
 }
 
-header .content .choose_bx {
+/* New styles for the Choose Box */
+.choose_bx {
     position: relative;
     width: 90%;
     height: auto;
     margin: auto;
-    /* border: 1px solid #000; */
 }
 
-header .content .choose_bx .stay_bx {
+.choose_bx .stay_bx {
     display: flex;
     align-items: center;
 }
 
-header .content .choose_bx .stay_bx button {
+.choose_bx .stay_bx button {
     padding: 10px 30px;
     background: #000;
-    color: rgb(255, 255, 255);
+    color: #fff;
     border: none;
     outline: none;
     font-family: 'Poppins', sans-serif;
@@ -218,31 +212,29 @@ header .content .choose_bx .stay_bx button {
     transition: .3s linear;
 }
 
-header .content .choose_bx .stay_bx button:hover {
-    background:rgb(255, 255, 255);
+.choose_bx .stay_bx button:hover {
+    background: #fff;
     color: #000;
 }
 
-header .content .choose_bx .stay_bx button:nth-child(1) {
+.choose_bx .stay_bx button:nth-child(1) {
     border-radius: 10px 0px 0px 0px;
-    background:#000;
-    color: rgb(255, 255, 255);
 }
 
-header .content .choose_bx .stay_bx button:nth-last-child(1) {
+.choose_bx .stay_bx button:nth-last-child(1) {
     border-radius: 0px 10px 0px 0px;
 }
 
-header .content .choose_bx .stay_bx button i {
+.choose_bx .stay_bx button i {
     margin-right: 5px;
 }
 
-header .content .choose_bx .select {
+.choose_bx .select {
     width: 100%;
     height: 135px;
-    background:rgb(255, 255, 255);
+    background: #fff;
     border-radius: 0px 10px 10px 10px;
-    border:#000000;
+    border: 1px solid #000;
     position: relative;
     padding: 10px 20px;
     z-index: 2;
@@ -251,279 +243,271 @@ header .content .choose_bx .select {
     justify-content: space-between;
 }
 
-header .content .choose_bx .select .card {
+.choose_bx .select .card {
     width: 26%;
     height: 90%;
-    border: rgb(255, 255, 255);
+    border: 1px solid #fff;
     border-radius: 10px;
     padding: 10px 0px 10px 30px;
 }
-
-header .content .choose_bx .select .card:nth-last-child(1) {
-    width: 46%;
+.choose_bx .select .card:nth-last-child(1) {
+width: 46%;
 }
 
-header .content .choose_bx .select .card h5 {
-    font-size: 16px;
-    font-weight: 500;
+.choose_bx .select .card h5 {
+font-size: 16px;
+font-weight: 500;
 }
 
-header .content .choose_bx .select .card input {
-    border: none;
-    outline: none;
-    margin-top: 5px;
-    font-size: 20px;
-    font-weight: 700;
-    background: none;
-    font-family: 'Poppins', sans-serif;
+.choose_bx .select .card input {
+border: none;
+outline: none;
+margin-top: 5px;
+font-size: 20px;
+font-weight: 700;
+background: none;
+font-family: 'Poppins', sans-serif;
 }
 
-header .content .choose_bx .select .card input:nth-child(3) {
-    font-size: 12px;
-    font-weight: 500;
-    color: rgb(0, 0, 0);
+.choose_bx .select .card input:nth-child(3) {
+font-size: 12px;
+font-weight: 500;
+color: rgb(0, 0, 0);
 }
 
-header .content .choose_bx .select .card button {
-    border: #000;
-    background: none;
-    outline: none;
-    margin-right: 20px;
-    margin-top: 5px;
-    font-family: 'Poppins', sans-serif;
-    cursor: pointer;
-    transition: .3s linear;
+.choose_bx .select .card button {
+border: #000;
+background: none;
+outline: none;
+margin-right: 20px;
+margin-top: 5px;
+font-family: 'Poppins', sans-serif;
+cursor: pointer;
+transition: .3s linear;
 }
 
-header .content .choose_bx .select .card button:hover {
-    border-bottom: 2px solid rgb(255, 255, 255);
+.choose_bx .select .card button:hover {
+border-bottom: 2px solid rgb(255, 255, 255);
 }
 
-header .content .choose_bx .select .card:nth-child(3) {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 15px;
+.choose_bx .select .card:nth-child(3) {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 10px 15px;
 }
 
-header .content .choose_bx .select .card:nth-child(3) .date {
-    position: relative;
-    display: flex;
-    align-items: center;
-    /* border: 1px solid #000; */
+.choose_bx .select .card:nth-child(3) .date {
+position: relative;
+display: flex;
+align-items: center;
 }
 
-header .content .choose_bx .select .card:nth-child(3) .date input {
-    width: 25px;
-    height: 30px;
-    margin-left: 10px;
-    z-index: 999999999999999999999999;
-    opacity: 0;
+.choose_bx .select .card:nth-child(3) .date input {
+width: 25px;
+height: 30px;
+margin-left: 10px;
+z-index: 999999999999999999999999;
+opacity: 0;
 }
 
-header .content .choose_bx .select .card:nth-child(3) .date i {
-    position: absolute;
-    left: 85%;
-    font-size: 23px;
-    z-index: -1;
+.choose_bx .select .card:nth-child(3) .date i {
+position: absolute;
+left: 85%;
+font-size: 23px;
+z-index: -1;
 }
 
-header .content .choose_bx .select .card:nth-child(3) .date h3 {
-    width: 120px;
+.choose_bx .select .card:nth-child(3) .date h3 {
+width: 120px;
 }
 
-header .content .choose_bx .select .card:nth-child(3) .date h5 {
-    font-size: 13px;
-    font-weight: 600;
+.choose_bx .select .card:nth-child(3) .date h5 {
+font-size: 13px;
+font-weight: 600;
 }
-
 
 .home {
-    position: relative;
-    width: 65%;
-    height: 230px;
-    margin: auto;
-    /* border: 1px solid #000; */
-    top: -220px;
-    z-index: 2;
+position: relative;
+width: 65%;
+height: 230px;
+margin: auto;
+top: -220px;
+z-index: 2;
 }
 
 .home .title_button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
 .home .title_button button {
-    position: absolute;
-    right: 0;
-    padding: 8px 15px;
-    background: #ffffff;
-    color: #000;
-    border: none;
-    outline: none;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font: 12px;
-    cursor: pointer;
-    transition: .3s linear;
+position: absolute;
+right: 0;
+padding: 8px 15px;
+background: #ffffff;
+color: #000;
+border: none;
+outline: none;
+font-family: 'Poppins', sans-serif;
+font-weight: 600;
+font: 12px;
+cursor: pointer;
+transition: .3s linear;
 }
 
 .home .title_button button:hover {
-    background: #000;
-    color: #000000;
+background: #000;
+color: #000000;
 }
 
 .home .title_button button .bi {
-    margin-left: 5px;
+margin-left: 5px;
 }
 
 .home .home_bx {
-    width: 100%;
-    margin-top: 50px;
-    /* border: 1px solid #000; */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+width: 100%;
+margin-top: 50px;
+display: flex;
+align-items: center;
+justify-content: space-between;
 }
 
 .home .home_bx .card {
-    position: relative;
-    width: 180px;
-    height: 260px;
-    border-radius: 15px;
-    /* border: 1px solid #000; */
+position: relative;
+width: 180px;
+height: 260px;
+border-radius: 15px;
 }
 
 .home .home_bx .card img {
-    width: 100%;
-    height: 100%;
-    border-radius: 15px;
+width: 100%;
+height: 100%;
+border-radius: 15px;
 }
 
 .home .home_bx .card .content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-    z-index: 999;
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+border-radius: 20px;
+z-index: 999;
 }
 
 .home .home_bx .card .content .bi {
-    position: absolute;
-    right: 15px;
-    top: 10px;
-    color: #000000;
+position: absolute;
+right: 15px;
+top: 10px;
+color: #000000;
 }
 
 .home .home_bx .card .content .bi::after {
-    content: '';
-    position: absolute;
-    width: 165%;
-    height: 110%;
-    background: rgb(255, 255, 255);
-    left: -35%;
-    top: -3px;
-    border-radius: 50%;
-    z-index: -1;
+content: '';
+position: absolute;
+width: 165%;
+height: 110%;
+background: rgb(255, 255, 255);
+left: -35%;
+top: -3px;
+border-radius: 50%;
+z-index: -1;
 }
 
 .home .home_bx .card .content .cont {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 20%;
+position: absolute;
+left: 0;
+bottom: 0;
+width: 100%;
+height: 20%;
 }
 
 .home .home_bx .card .content .cont::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: rgb(255, 255, 255);
-    backdrop-filter: blur(5px);
-    border-radius: 0px 0px 13px 13px;
-    z-index: -1;
+content: '';
+position: absolute;
+width: 100%;
+height: 100%;
+background: rgb(255, 255, 255);
+backdrop-filter: blur(5px);
+border-radius: 0px 0px 13px 13px;
+z-index: -1;
 }
 
 .home .home_bx .card .content .cont h4 {
-    color: #000000;
-    padding: 10px 0px 0px 15px;
-    line-height: 5px;
+color: #000000;
+padding: 10px 0px 0px 15px;
+line-height: 5px;
 }
 
 .home .home_bx .card .content .cont p {
-    color: #000000;
-    padding: 10px 0px 0px 15px;
-    font-size: 12px;
+color: #000000;
+padding: 10px 0px 0px 15px;
+font-size: 12px;
 }
 
 section {
-    position: relative;
-    width: 65%;
-    height: auto;
-    /* border: 1px solid #000; */
-    margin: auto;
+position: relative;
+width: 65%;
+height: auto;
+margin: auto;
 }
 
 section h2 {
-    text-align: center;
+text-align: center;
 }
 
 section .box {
-    width: 100%;
-    margin: auto;
-    margin-top: 50px;
-    display: flex;
+width: 100%;
+margin: auto;
+margin-top: 0px;
+display: flex;
 }
 
 section .box .img_bx,
 .cont_box {
-    width: 50%;
-    height: 100%;
-    /* border: 1px solid #000; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+width: 50%;
+height: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
 section .box .img_bx img {
-    width: 85%;
-    border-radius: 5px;
+width: 85%;
+border-radius: 5px;
 }
 
 section .box .cont_box {
-    flex-direction: column;
-    align-items: flex-start;
+flex-direction: column;
+align-items: flex-start;
 }
 
 section .box .cont_box h6 {
-    position: relative;
+position: relative;
 }
 
 section .box .cont_box h6 span {
-    margin-left: 25px;
+margin-left: 25px;
 }
 
 section .box .cont_box h6::before {
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 1.5px;
-    background: rgb(255, 255, 255);
-    top: 7px;
+content: '';
+position: absolute;
+width: 20px;
+height: 1.5px;
+background: rgb(255, 255, 255);
+top: 7px;
 }
 
 section .box .cont_box h1 {
-    font-weight: 600;
-    margin: 10px 0px;
+font-weight: 600;
+margin: 10px 0px;
 }
 
 section .box .cont_box p {
-    font-size: 12px;
+font-size: 12px;
 }
 
 section .box .cont_box ul {
@@ -534,13 +518,11 @@ section .box .cont_box ul {
     align-items: center;
     justify-content: space-between;
 }
-
 section .box .cont_box ul li {
     position: relative;
     font-size: 13px;
     font-weight: bold;
     width: 200px;
-    /* border: 1px solid #000; */
     margin-top: 20px;
 }
 
@@ -549,7 +531,7 @@ section .box .cont_box ul li::before {
     position: absolute;
     width: 5px;
     height: 5px;
-    background:#000;
+    background: #000;
     border-radius: 50%;
     left: -20px;
     top: 8px;
@@ -572,3 +554,5 @@ footer h4 {
 footer h4 .bi {
     margin-right: 5px;
 }
+
+
