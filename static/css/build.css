@@ -1,7 +1,7 @@
-/* FONTS */
+
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap');
 
-/* GENERAL */
+
 *{
     padding: 0;
     margin: 0;
@@ -11,21 +11,21 @@
 a{
     text-decoration: none!important;
 }
-.transition{ /* transition for diferents class */
+.transition{ 
     -webkit-transition:all 200ms linear;
 	-moz-transition:all 200ms linear;
 	-o-transition:all 200ms linear;
 	-ms-transition:all 200ms linear;
 	transition:all 200ms linear;
 }
-.cover-full{ /* object absolute cover full area */
+.cover-full{ 
     position: absolute;
     left: 0;
     top: 0;
     right: 0;
     bottom: 0; 
 }
-.center{ /* set in center */
+.center{ 
     position:absolute;
     top:50%;
     left:50%;
@@ -57,7 +57,7 @@ h3, h4, h5, h6{
     font-weight: 500!important;
 }
 
-/* ALL SECTIONS */
+
 .section-title{
     font-weight: 700;
     margin-bottom: 50px;
@@ -79,7 +79,6 @@ h3, h4, h5, h6{
 }
 
 
-/* NAVBAR */
 .navbar {
     position: absolute!important;
     width: 100%;
@@ -116,7 +115,6 @@ h3, h4, h5, h6{
     z-index: 4;
 }
 
-/* CAROUSEL IMAGES */
 .banner{
     position: relative;
 }
@@ -157,7 +155,6 @@ h3, h4, h5, h6{
     margin: 10px 0 30px;
     text-shadow: 0 0 15px #2b2b2b;
 }
-/* CONTACT */
 .contact{
     padding: 80px 0;
 }
@@ -179,7 +176,7 @@ h3, h4, h5, h6{
 .contact-form button {
     color:rgb(11, 10, 56)!important;
 }
-/* FOOTER */
+
 .footer1{
     background-color:#1b2132;
 }
